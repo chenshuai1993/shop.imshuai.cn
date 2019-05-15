@@ -33,4 +33,6 @@ $factory->define(App\Models\CouponCode::class, function (Faker $faker) {
         'not_after'  => null,
         'enabled'    => true,
     ];
+
+    //factory(App\Models\CouponCode::class, 10)->create()
 });
