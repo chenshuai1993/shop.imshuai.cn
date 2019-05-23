@@ -13,6 +13,7 @@ use Encore\Admin\Show;
 use Encore\Admin\Facades\Admin;
 
 
+
 class ProductsController extends Controller
 {
     use HasResourceActions;

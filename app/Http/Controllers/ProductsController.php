@@ -7,12 +7,15 @@ use App\Models\Product;
 use App\Exceptions\InvalidRequestException;
 use App\Models\OrderItem;
 use App\Models\Category;
+use App\Jobs\Test;
+
 
 class ProductsController extends Controller
 {
     //
     public function index(Request $request)
     {
+
         // 创建一个查询构造器
         $builder = Product::query()->where('on_sale', true);
         // 判断是否有提交 search 参数，如果有就赋值给 $search 变量
