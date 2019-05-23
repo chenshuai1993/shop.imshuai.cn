@@ -21,7 +21,7 @@
 
 LOCK TABLES `admin_menu` WRITE;
 /*!40000 ALTER TABLE `admin_menu` DISABLE KEYS */;
-INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,'2019-05-10 07:13:16'),(2,0,2,'系统管理','fa-tasks',NULL,NULL,'2019-05-10 07:13:40'),(3,2,3,'管理员','fa-users','auth/users',NULL,'2019-05-10 07:14:35'),(4,2,4,'角色','fa-user','auth/roles',NULL,'2019-05-10 07:14:00'),(5,2,5,'权限','fa-ban','auth/permissions',NULL,'2019-05-10 07:14:07'),(6,2,6,'菜单','fa-bars','auth/menu',NULL,'2019-05-10 07:14:16'),(7,2,7,'日志','fa-history','auth/logs',NULL,'2019-05-10 07:14:41'),(8,0,0,'用户管理','fa-users','/users','2019-05-10 07:23:23','2019-05-15 11:31:55'),(9,0,0,'商品管理','fa-cubes','/products','2019-05-10 07:54:27','2019-05-15 11:31:35'),(10,0,0,'订单管理','fa-jpy','/orders','2019-05-14 07:53:25','2019-05-15 11:36:21'),(11,0,0,'优惠券管理','fa-tag','/coupon_codes','2019-05-15 06:03:09','2019-05-15 11:36:37'),(12,0,0,'类目管理','fa-bars','/categories','2019-05-22 14:13:34','2019-05-22 14:13:34');
+INSERT INTO `admin_menu` VALUES (1,0,1,'首页','fa-bar-chart','/',NULL,'2019-05-10 07:13:16'),(2,0,2,'系统管理','fa-tasks',NULL,NULL,'2019-05-10 07:13:40'),(3,2,3,'管理员','fa-users','auth/users',NULL,'2019-05-10 07:14:35'),(4,2,4,'角色','fa-user','auth/roles',NULL,'2019-05-10 07:14:00'),(5,2,5,'权限','fa-ban','auth/permissions',NULL,'2019-05-10 07:14:07'),(6,2,6,'菜单','fa-bars','auth/menu',NULL,'2019-05-10 07:14:16'),(7,2,7,'日志','fa-history','auth/logs',NULL,'2019-05-10 07:14:41'),(8,0,8,'用户管理','fa-users','/users','2019-05-10 07:23:23','2019-05-23 14:45:38'),(9,0,10,'商品管理','fa-cubes','/products','2019-05-10 07:54:27','2019-05-23 14:45:38'),(10,0,11,'订单管理','fa-jpy','/orders','2019-05-14 07:53:25','2019-05-23 14:45:38'),(11,0,12,'优惠券管理','fa-tag','/coupon_codes','2019-05-15 06:03:09','2019-05-23 14:45:38'),(12,0,9,'类目管理','fa-bars','/categories','2019-05-23 14:45:13','2019-05-23 14:45:38');
 /*!40000 ALTER TABLE `admin_menu` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -103,4 +103,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-05-22 22:26:24
+-- Dump completed on 2019-05-23 22:46:15
