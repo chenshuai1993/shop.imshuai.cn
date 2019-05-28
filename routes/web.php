@@ -11,6 +11,16 @@
 |
 */
 
+Route::get('test', function (){
+
+    $中国 = '111';
+
+   dd($中国);
+
+
+})->name('root');
+
+
 Route::redirect('/', '/products')->name('root');
 Route::get('products', 'ProductsController@index')->name('products.index');
 
