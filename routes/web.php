@@ -11,16 +11,6 @@
 |
 */
 
-Route::get('test', function (){
-
-    $中国 = '111';
-
-   dd($中国);
-
-
-})->name('root');
-
-
 Route::redirect('/', '/products')->name('root');
 Route::get('products', 'ProductsController@index')->name('products.index');
 
@@ -58,9 +48,13 @@ Route::group(['middleware' => 'auth'], function() {
         Route::post('payment/{order}/installment', 'PaymentController@payByInstallment')->name('payment.installment');
         Route::get('installments', 'InstallmentsController@index')->name('installments.index');
         Route::get('installments/{installment}', 'InstallmentsController@show')->name('installments.show');
+        Route::get('installments/{installment}/alipay', 'InstallmentsController@payByAlipay')->name('installments.alipay');
+        Route::get('installments/alipay/return', 'InstallmentsController@alipayReturn')->name('installments.alipay.return');
     });
 
 });
 
 Route::get('products/{product}', 'ProductsController@show')->name('products.show');
 Route::post('payment/alipay/notify', 'PaymentController@alipayNotify')->name('payment.alipay.notify');
+// 后端回调不能放在 auth 中间件中
+Route::post('installments/alipay/notify', 'InstallmentsController@alipayNotify')->name('installments.alipay.notify');
